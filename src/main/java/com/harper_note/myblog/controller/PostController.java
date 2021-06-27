@@ -16,7 +16,7 @@ public class PostController {
 
     @GetMapping("/api/posts")
     public List<Post> getPosts() {
-        return postRepository.findAllByCreatedAtDesc();
+        return postRepository.findAllByOrderByCreatedAtDesc();
     }
 
     @GetMapping("/api/posts/{id}")
