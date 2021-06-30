@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sooyeon.log</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="header" onclick="window.location.href='index.html'">
+    sooyeon.log
+</div>
+<div id="see-area">
+    <div id="write-container">
+        <div class="card w-100 card-write">
+            <div class="mb-3">
+                <label for="input-title" class="form-label">제목</label>
+                <input type="email" class="form-control" id="input-title" placeholder="제목을 입력해 주세요">
+            </div>
+            <div class="mb-3">
+                <label for="input-writer" class="form-label">작성자</label>
+                <input type="email" class="form-control" id="input-writer" placeholder="작성자를 입력해 주세요">
+            </div>
+            <div class="mb-3">
+                <label for="input-contents" class="form-label">내용</label>
+                <textarea class="form-control" id="input-contents" rows="10" placeholder="내용을 입력해 주세요"></textarea>
+            </div>
+        </div>
+        <div class="write-button-box">
+            <a type="button" class="btn btn-secondary" href="/">취소</a>
+            <button type="button" class="btn btn-secondary" onclick="writePost()">등록</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

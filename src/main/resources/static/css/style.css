@@ -1,0 +1,103 @@
+.header {
+    background-color: #183551;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav {
+    width: 530px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#see-area {
+    width: 530px;
+    margin: auto;
+}
+
+.post-title {
+    margin-bottom: 20px;
+    width: 490px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-write {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.write-button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.write-button-box > a {
+    margin-right: 15px;
+}
+
+.card.w-100 {
+    margin-bottom: 15px;
+}
+
+.post-title {
+    height: 40px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#detail-container {
+    margin-top: 20px;
+}
+
+.detail-button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input#query {
+    padding: 15px;
+    width: 420px;
+    border-radius: 2px;
+    background-color: #e9ecef;
+    border: none;
+
+    background-image: url('../images/icon-search.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px 20px;
+}
+
+input#query::placeholder {
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+}
