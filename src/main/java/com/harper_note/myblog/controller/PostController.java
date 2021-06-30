@@ -15,8 +15,12 @@ public class PostController {
     private final PostRepository postRepository;
 
     @GetMapping("/api/posts")
-    public List<Post> getPosts() {
-        return postRepository.findAllByOrderByCreatedAtDesc();
+    public List<Post> getPosts(@RequestParam(value="search", required = false) String search) {
+        if(search == null) {
+            return postRepository.findAllByOrderByCreatedAtDesc();
+        } else {
+            return postRepository.findByTitleLikeOrderByCreatedAtDesc("%" + search + "%");
+        }
     }
 
     @GetMapping("/api/posts/{id}")
